@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pure CSS Timeline Design With Cool Hover Effects</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    *, html,body{
+    padding:0px;
+    margin:0px;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+    perspective:800px;
+    }
+    body{
+    background-color:#0C0C0C;
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    }
+    .first{
+        display: grid;
+        grid-row: 0.5fr 2fr;
+        grid-column: 10fr;
+        align-items: grid start;
+    }
+    .first img {
+	height: 5rem;
+	width: 5rem;
+	border-radius: 50%;
+	margin: .9rem 0 0 0;
+	float: left;
+    margin-bottom: 930px;
+    margin-top: -250px;
+}
+    .timeline{
+    width:800px;
+    background-color:#000000;
+    color:#fff;
+    padding:30px 20px;
+    box-shadow:0px 0px 10px rgba(241, 239, 239, 0.5);
+    }
+    .timeline ul{
+    list-style-type:none;
+    border-left:2px solid #094a68;
+    padding:10px 5px;
+    }
+    .timeline ul li{
+    padding:20px 20px;
+    position:relative;
+    cursor:pointer;
+    transition:.5s;
+    }
+    .timeline ul li span{
+    display:inline-block;
+    background-color:#1685b8;
+    border-radius:125px;
+    padding:2px 5px;
+    font-size:15px;
+    text-align:center;
+    }
+    .timeline ul li .content h3{
+    color:#34ace0;
+    font-size:17px;
+    padding-top:5px;
+    }
+    .timeline ul li .content p{
+    padding:5px 0px 15px 0px;
+    font-size:15px;
+    gap: 0.2px;
+    }
+    .timeline ul li:before{
+    position:absolute;
+    content:'';
+    width:10px;
+    height:10px;
+    background-color:#34ace0;
+    border-radius:50%;
+    left:-11px;
+    top:28px;
+    transition:.5s;
+    }
+    .timeline ul li:hover{
+    background-color:#1f2121;
+    }
+    .timeline ul li:hover:before{
+    background-color:#0F0;
+    box-shadow:0px 0px 10px 2px #0F0;
+    }
+    @media (max-width:300px){
+    .timeline{
+        width:100%;
+        padding:30px 5px 30px 10px;
+    }
+    .timeline ul li .content h3{
+        color:#34ace0;
+        font-size:15px;
+    }
+
+    }
+  </style>
+</head>
+<body>
+    <div class="first">
+        <img src="assets/img/kvs.png" alt="School">
+        <img src="assets/img/bitr.jpg" alt="School">
+    </div>
+    <div class="timeline">
+    <ul>
+        <li>
+            <span>2007-2019</span>
+            <div class="content">
+              <h3>Kendriya Vidyalaya No.1 Raipur(C.G)</h3>
+              <ul>
+                <li><span>2016</span>
+                    <div class="content">
+                        <h3>9<sup>th</sup></h3>
+                        <p>Participated at NCSC(National Children Science Congress) Topic : Bio-Energy Harvesting from School Urine Sources.</p>
+                    </div>
+                </li>
+                <li><span>2017</span>
+                    <div class="content">
+                        <h3>10<sup>th</sup></h3>
+                        <p>Scored 10 CGPA in the 10th board exam.</p>
+                    </div>
+                </li>
+                <li><span>2018</span>
+                    <div class="content">
+                        <h3>11<sup>th</sup></h3>
+                        <p>Participated at NCSC(National Children Science Congress) with topic hazards of Bisphenol-A in baby bottles and its alternatives.</p>
+                    </div>
+                </li>
+                <li><span>2019</span>
+                    <div class="content">
+                        <h3>12<sup>th</sup><h3>
+                        <p style="color: #fff; font-family: sans-serif; font-weight: lighter;">Secured 86% (CBSE) and Developed a Concert Ticket Booking System using the File Management in C++ and Mysql.</p>
+                    </div>
+                </li>
+              </ul>
+            
+            </div>
+          </li>
+      
+      <li>
+        <span>2020-2023</span>
+        <div class="content">
+          <h3>B.Tech in Computer Science and Engineering</h3>
+          <ul>
+            <li><h3>1<sup>st</sup> sem</h3>
+                <p>Scored 90.2%</p>
+                <p>Language : C</p></li>
+            <li><h3>2<sup>nd</sup> sem</h3>
+                <p>Scored 88.9%</p>
+                <p>Language : C++,HTML and CSS</p></li>
+            <li><h3>3<sup>rd</sup> sem</h3>
+                <p>Scored 90.7% and Participated at Smart India Hackathon(SIH) - Worked on problem statement given by DRDO- DRONE DETECTION (Technology used- ML and Deep Learning)</p>
+                <p>Language : Python, MySql and started my journey in the field of Data Science through Coding Ninjas.</p></li>
+            <li><h3>4<sup>th</sup> sem</h3>
+                <p>Scored 89.1% and Volunteered in GDSC - Helped in smoothly operating the events organised by the GDSC</p>
+                <p>Libraries: Numpy, Pandas, Matplllotlib, BeautifulSoup and Selenium. </p></li>
+            <li><h3>5<sup>th</sup> sem</h3>
+                <p>Scored 85.6% and Organized the Startup Event in college</p>
+                <p>Got into Machine Learning, Natural Language Processing and build various projects.</p></li>
+            <li><h3>6<sup>th</sup> sem</h3>
+                <p>Libraries: Tensorflow and Keras.</p>
+                <p>Learned Deep Learning and worked on pre-trained models to build model for project.</p></li>
+          </ul>
+        
+        </div>
+      </li>
+      <li>
+        <span>2023-2024</span>
+        <div class="content">
+          <h3>7th sem</h3>
+          <p>Currently working on project Facial Emotion Recognition using the visual and audio features.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+</body>
+</html>
